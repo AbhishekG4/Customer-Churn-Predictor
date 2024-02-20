@@ -14,12 +14,12 @@ for i in y.values:
         col.append('blue')
     else: col.append('red')
 
-'''plt.figure(figsize=(8,6))
+plt.figure(figsize=(8,6))
 plt.scatter(X.iloc[:,5].values, X.iloc[:,8].values, c=col, s=4)
 plt.xlabel('Total Day Charge')
 plt.ylabel('Total Eve Charge')
 plt.title('Dataset')
-plt.show()'''
+plt.show()
 
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=39, stratify=y)
